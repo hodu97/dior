@@ -145,19 +145,7 @@ init();
 
 let spline = document.querySelector(".spline");
 
-gsap
-  .timeline({
-    scrollTrigger: {
-      trigger: spline,
-      start: "top 20% ",
-      end: "80% bottom", //속도 반영할수 잇음
-      pin:true,
-      scrub: 1,
-      //scroller:"#main",
-      //markers: true,
-    },
-  })
-;
+
   gsap.to(".mw_cont2", {
     scrollTrigger: {
       trigger: ".mw_cont1",
