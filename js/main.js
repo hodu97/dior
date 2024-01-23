@@ -149,34 +149,21 @@ gsap
   .timeline({
     scrollTrigger: {
       trigger: spline,
-      start: "top top",
+      start: "top 20% ",
       end: "80% bottom", //속도 반영할수 잇음
+      pin:true,
       scrub: 1,
       //scroller:"#main",
-      pin: true,
       //markers: true,
     },
   })
-  .to(spline, {
-    xPercent: 0,
-    duration: 0.2,
-  })
-  .to(spline, {
-    xPercent: 200,
-    yPercent: 200,
-    autoAlpha: 0,
-    delay: 1,
-  })
-  .to(spline, {
-    PointerEvent: "none",
-  });
+;
   gsap.to(".mw_cont2", {
     scrollTrigger: {
-      trigger: ".mw_cont1 h3",
+      trigger: ".mw_cont1",
       start: "top 50%",
-      end: "bottom top", //바닥이 화면의 40%에 왔을때 끝나라
-      pin: true,
-
+      end: "bottom 80%  ", //바닥이 화면의 40%에 왔을때 끝나라
+      pin:true,
     },
     opacity: 1,
   });

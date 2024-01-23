@@ -401,7 +401,6 @@ button {
 }
 
 #page2 .menu_wrap .mw_cont1 {
-
   width: 45%;
   height: 53vw;
   font-size: 3vw;
@@ -411,6 +410,7 @@ button {
 }
 
 #page2 .menu_wrap .mw_cont1 h3 {
+  position: sticky;
   padding-left: 30px;
   border-bottom: 1px solid #5f5953;
 }
@@ -419,7 +419,7 @@ button {
   z-index: 20;
   top: 0;
   left: 0;
-  width: 50vw;
+  height: 53vw;
   pointer-events: none;
 }
 
